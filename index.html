@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sapa Local Taxi and Travel offers private taxi tours, transfers from Sapa to other provinces, bus tickets and attraction tickets in northern Vietnam.">
+<meta name="keywords" content="Sapa taxi, Sapa taxi tour, Sapa transfer, Sapa bus tickets, Sapa attraction tickets, Sapa travel">
+<meta name="theme-color" content="#075b3b">
+<title>Sapa Local Taxi and Travel | Taxi, Transfers & Tickets</title>
+<style>
+:root{--g:#075b3b;--g2:#0a7950;--gold:#f4bd20;--cream:#fffdf8;--text:#17342a;--muted:#68766f;--line:#e4ece7;--shadow:0 16px 45px rgba(0,70,45,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--text);background:var(--cream);line-height:1.6}a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;color:var(--g);font-weight:850}.brand img{width:52px;height:52px;border-radius:50%;object-fit:cover}.brand small{display:block;font-size:9px;letter-spacing:.8px;color:#708078;margin-top:2px}.links{display:flex;gap:23px;font-size:14px;font-weight:700}.links a:hover{color:var(--g2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 19px;border-radius:999px;font-weight:800;border:0;cursor:pointer}.primary{background:var(--g);color:white}.primary:hover{background:#04472f}.gold{background:var(--gold);color:#17342a}.outline{border:2px solid var(--g);color:var(--g);background:white}
+.hero{min-height:650px;color:#fff;display:flex;align-items:center;background:linear-gradient(90deg,rgba(0,50,33,.86),rgba(0,50,33,.28)),url("https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1800&q=85") center/cover}.hero-content{max-width:720px;padding:80px 0}.eyebrow{display:inline-block;color:#ffe27a;border:1px solid #f4bd20;background:rgba(244,189,32,.15);border-radius:999px;padding:7px 12px;font-size:12px;font-weight:850;letter-spacing:.5px}.hero h1{font-size:clamp(44px,7vw,78px);line-height:1.02;margin:18px 0}.hero h1 span{color:#ffd24b}.hero p{font-size:19px;max-width:650px;color:#edf7f2}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+section{padding:82px 0}.head{text-align:center;max-width:700px;margin:0 auto 42px}.head h2{font-size:clamp(30px,4vw,45px);line-height:1.1;color:var(--g);margin:0 0 12px}.head p{color:var(--muted);margin:0}
+.services{background:#f4f8f5}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.service{background:#fff;border:1px solid var(--line);border-radius:23px;overflow:hidden;box-shadow:var(--shadow);transition:.2s}.service:hover{transform:translateY(-5px)}.service img{width:100%;height:190px;object-fit:cover;display:block}.service-body{padding:21px}.service h3{color:var(--g);margin:0 0 7px}.service p{font-size:14px;color:var(--muted);margin:0}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.why-img{min-height:430px;border-radius:30px;background:url("https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1200&q=85") center/cover;box-shadow:var(--shadow)}.checks{display:grid;gap:15px;margin-top:22px}.check{display:flex;gap:12px}.tick{flex:0 0 29px;height:29px;border-radius:50%;background:var(--g);color:#fff;display:grid;place-items:center;font-weight:900}.check b{display:block}.check p{margin:2px 0 0;color:var(--muted);font-size:14px}
+.booking{background:#f4f8f5}.booking-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.box{background:#fff;border:1px solid var(--line);border-radius:25px;padding:30px;box-shadow:var(--shadow)}.box h3{color:var(--g);font-size:25px;margin:0 0 8px}.box>p{color:var(--muted);margin-top:0}form{display:grid;gap:13px}label{font-size:13px;font-weight:750}input,select,textarea{width:100%;padding:13px 14px;border:1px solid #d7e2dc;border-radius:12px;font:inherit;background:#fff;color:var(--text)}textarea{min-height:100px;resize:vertical}
+.map{width:100%;height:320px;border:0;border-radius:22px}.contact-row{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-item{padding:14px 0;border-bottom:1px solid var(--line)}.contact-item:last-child{border-bottom:0}.contact-item small{display:block;text-transform:uppercase;font-size:11px;color:#7b8982;letter-spacing:.7px}.contact-item strong,.contact-item a{color:var(--g)}
+.cta{background:linear-gradient(135deg,var(--g),#0b7b51);color:#fff}.cta-row{display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{font-size:clamp(30px,4vw,46px);margin:0 0 6px}.cta p{margin:0;color:#d7eee4}
+footer{background:#073e2a;color:#d8eee5;padding:27px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot small{color:#a9c8bb}.wa{position:fixed;right:18px;bottom:18px;width:59px;height:59px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;font-size:28px;z-index:60;box-shadow:0 10px 30px rgba(0,0,0,.22)}
+@media(max-width:900px){.links{display:none}.grid{grid-template-columns:repeat(2,1fr)}.why,.booking-grid,.contact-row{grid-template-columns:1fr}.why-img{min-height:330px}}
+@media(max-width:600px){nav{height:68px}.brand img{width:43px;height:43px}.brand{font-size:13px}.hero{min-height:650px}.hero p{font-size:17px}section{padding:62px 0}.grid{grid-template-columns:1fr}.service img{height:210px}.actions .btn{width:100%}.cta-row,.foot{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<header><div class="container"><nav>
+<a class="brand" href="#home"><img src="assets/logo.png" alt="Sapa Local Taxi and Travel logo"><span>Sapa Local Taxi and Travel<small>EXPLORE SAPA WITH US</small></span></a>
+<div class="links"><a href="#services">Services</a><a href="#why">Why Us</a><a href="#booking">Book</a><a href="#contact">Contact</a></div>
+<a class="btn primary" href="https://wa.me/84373802501?text=Hello%20Sapa%20Local%20Taxi%20and%20Travel%2C%20I%20would%20like%20to%20make%20a%20booking." target="_blank">Book Now</a>
+</nav></div></header>
+
+<main>
+<section id="home" class="hero"><div class="container"><div class="hero-content">
+<div class="eyebrow">LOCAL TAXI • TRAVEL • TICKETS</div>
+<h1>Explore <span>Sapa</span> with Us</h1>
+<p>Private taxi tours, comfortable transfers, bus tickets and attraction tickets — simple, safe and convenient travel from Sapa.</p>
+<div class="actions"><a class="btn gold" href="https://wa.me/84373802501?text=Hello%20Sapa%20Local%20Taxi%20and%20Travel%2C%20I%20would%20like%20to%20make%20a%20booking." target="_blank">💬 WhatsApp Us</a><a class="btn" style="background:#fff;color:var(--g)" href="#services">View Services</a></div>
+</div></div></section>
+
+<section id="services" class="services"><div class="container"><div class="head"><h2>Our Services</h2><p>Local travel services designed to make your trip around Sapa and northern Vietnam easier.</p></div>
+<div class="grid">
+<article class="service"><img src="assets/taxi-tours.jpg" alt="Private taxi tours in Sapa"><div class="service-body"><h3>🚕 Private Taxi Tours</h3><p>Flexible private tours with local drivers. Safe, comfortable and tailored to your plans.</p></div></article>
+<article class="service"><img src="assets/transfers.jpg" alt="Transfers from Sapa to other provinces"><div class="service-body"><h3>🚐 Transfers</h3><p>Comfortable transfers from Sapa to Hanoi and other provinces with convenient pickup and drop-off.</p></div></article>
+<article class="service"><img src="assets/bus-tickets.jpg" alt="Bus tickets from Sapa"><div class="service-body"><h3>🚌 Bus Tickets</h3><p>Easy booking for bus routes from Sapa to popular destinations across northern Vietnam.</p></div></article>
+<article class="service"><img src="assets/attraction-tickets.jpg" alt="Attraction tickets in Sapa"><div class="service-body"><h3>🎟️ Attraction Tickets</h3><p>Book tickets for famous Sapa attractions and enjoy more experiences with less hassle.</p></div></article>
+</div></div></section>
+
+<section id="why"><div class="container why"><div class="why-img"></div><div>
+<div class="head" style="text-align:left;margin:0"><h2>Travel with a Local You Can Trust</h2><p>Friendly support from booking to arrival.</p></div>
+<div class="checks">
+<div class="check"><div class="tick">✓</div><div><b>Local & Experienced Drivers</b><p>Drivers who know Sapa and the surrounding routes.</p></div></div>
+<div class="check"><div class="tick">✓</div><div><b>Safe & Comfortable</b><p>Comfortable vehicles for individuals, couples and groups.</p></div></div>
+<div class="check"><div class="tick">✓</div><div><b>Easy Booking</b><p>Contact us directly via WhatsApp for quick assistance.</p></div></div>
+<div class="check"><div class="tick">✓</div><div><b>English Support</b><p>Easy communication before and during your trip.</p></div></div>
+</div></div></div></section>
+
+<section id="booking" class="booking"><div class="container"><div class="head"><h2>Book Your Trip</h2><p>Fill in the details below. The button will open WhatsApp with your booking information.</p></div>
+<div class="booking-grid"><div class="box"><form id="bookingForm">
+<div><label>Name</label><input id="name" required placeholder="Your name"></div>
+<div><label>Travel date</label><input id="date" type="date" required></div>
+<div><label>Pick-up</label><input id="pickup" required placeholder="e.g. Sapa town / hotel"></div>
+<div><label>Destination</label><input id="destination" required placeholder="e.g. Hanoi"></div>
+<div><label>Passengers</label><input id="passengers" type="number" min="1" value="2" required></div>
+<div><label>Service</label><select id="service"><option>Private Taxi Tour</option><option>Transfer from Sapa</option><option>Bus Ticket</option><option>Attraction Ticket</option></select></div>
+<div><label>Notes</label><textarea id="notes" placeholder="Any special requests?"></textarea></div>
+<button class="btn primary" type="submit">💬 Send Booking via WhatsApp</button>
+</form></div>
+<div class="box"><h3>Fast & Easy Booking</h3><p>For a faster quote, send us your travel date, pickup point, destination and number of passengers.</p>
+<div class="contact-item"><small>WhatsApp</small><strong><a href="https://wa.me/84373802501" target="_blank">+84 373 802 501</a></strong></div>
+<div class="contact-item"><small>WhatsApp</small><strong><a href="https://wa.me/840775655141" target="_blank">+84 077 565 5141</a></strong></div>
+<div class="contact-item"><small>Email</small><strong><a href="mailto:minhhuy261124@gmail.com">minhhuy261124@gmail.com</a></strong></div>
+<div class="contact-item"><small>Location</small><strong>Sapa, Lao Cai, Vietnam</strong></div>
+</div></div></div></section>
+
+<section id="contact"><div class="container"><div class="head"><h2>Find Us in Sapa</h2><p>Serving travelers from Sapa, Lao Cai, Vietnam.</p></div>
+<iframe class="map" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Sapa%2C%20Lao%20Cai%2C%20Vietnam&output=embed"></iframe>
+</div></section>
+
+<section class="cta"><div class="container cta-row"><div><h2>Ready to explore Sapa?</h2><p>Your journey, our passion.</p></div><a class="btn gold" href="https://wa.me/84373802501?text=Hello%20Sapa%20Local%20Taxi%20and%20Travel%2C%20I%20want%20to%20ask%20about%20a%20trip." target="_blank">Start a Booking →</a></div></section>
+</main>
+
+<footer><div class="container foot"><div><b>Sapa Local Taxi and Travel</b><br><small>Explore Sapa with Us – Your Journey, Our Passion!</small></div><small>© 2026 Sapa Local Taxi and Travel</small></div></footer>
+<a class="wa" href="https://wa.me/84373802501?text=Hello%20Sapa%20Local%20Taxi%20and%20Travel%2C%20I%20would%20like%20to%20make%20a%20booking." target="_blank" aria-label="WhatsApp">💬</a>
+
+<script>
+document.getElementById('bookingForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  const msg = `Hello Sapa Local Taxi and Travel,%0A%0AI would like to make a booking:%0A%0AName: ${encodeURIComponent(v('name'))}%0ADate: ${encodeURIComponent(v('date'))}%0APick-up: ${encodeURIComponent(v('pickup'))}%0ADestination: ${encodeURIComponent(v('destination'))}%0APassengers: ${encodeURIComponent(v('passengers'))}%0AService: ${encodeURIComponent(v('service'))}%0ANotes: ${encodeURIComponent(v('notes'))}`;
+  window.open('https://wa.me/84373802501?text='+msg, '_blank');
+});
+</script>
+</body>
+</html>
